@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  max-width: 800px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  border-radius: 7px;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.post__content {
+  margin-right: 10px;
+}
+
+.post__btns {
+  display: flex;
+}
+
+.post__btns button {
+  margin: 5px;
+}
+
+.post-enter {
+  opacity: 0;
+}
+.post-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+
+.page {
+  cursor: pointer;
+  border: 1px solid teal;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+.login__page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+.login__page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about__wrapper {
+  text-align: center;
+  margin-top: 40px;
+  max-width: 1000px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.about__description {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.button__new-post {
+  margin-top: 30px;
+}
+
+.filter__select {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.posts__title {
+  margin-top: 20px;
+}
+
+.post__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.post__page-title {
+  text-align: center;
+  padding: 20px;
+}
+.comments__title {
+  margin-top: 20px;
+}
